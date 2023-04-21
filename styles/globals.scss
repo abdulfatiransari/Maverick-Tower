@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "/styles/typography";
+@import "/styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+
+  // No- Scroll Bar Start
+  &::-webkit-scrollbar {
+    height: 0;
+
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 0;
+
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    height: 0;
+
+    width: 0;
+  }
+
+  // No- Scroll Bar END
+}
+
+*[data-theme="dark"] {
+  background-color: black;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 15px 10px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  opacity: 0.5;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  opacity: 1;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+    line-height: 100%;
+
+    letter-spacing: -0.03em;
+  }
+
+  // h3 {
+  //   font-size: 7px;
+  //   line-height: 9px;
+  //   letter-spacing: -0.03em;
+  // }
+  // p {
+  //   font-size: 5px;
+  //   line-height: 6px;
+  //   letter-spacing: -0.03em;
+  // }
+}
+
+.section {
+  padding: 10px 85px;
+  // border: 1px solid blue;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 640px) {
+    padding: 2px 2px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+}
+
+.line {
+  // border: 1px solid red;
+}
+
+.FlexCenter {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FlexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  @media screen and (max-width: 640px) {
+    // padding: 2px 2px;
+    margin: 0;
+    // background: #1f1e24;
+    // border-bottom: 1px solid rgba(69, 69, 74, 0.5);
+  }
+}
+
+.web3_L {
+  background: linear-gradient(90deg, #6421CE 0%, #CE5917 84.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.web3_D {
+  background: linear-gradient(90deg, #9a68ea 0%, #2cb885 84.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+
+.cover {
+  &_1 {
+    border-radius: 50px;
+    background: linear-gradient(180deg, #273464 0%, #3b1e8f 100%);
+
+    @media screen and (max-width: 640px) {
+      border-radius: 15px;
+
+      h3 {
+        font-size: 7px;
+        line-height: 9px;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        font-size: 5px;
+        line-height: 6px;
+        letter-spacing: -0.03em;
+      }
+
+      button {
+        font-size: 5px;
+        line-height: 6px;
+        letter-spacing: -0.01em;
+        padding: 2px 6px;
+        margin: 8px 1px;
+        // margin-bottom: 20px;
+      }
+    }
+  }
+
+  &_2 {
+    border-radius: 50px;
+    background: linear-gradient(180deg, #413c51 0%, #171229 100%);
+
+    button {
+      background: rgba(60, 192, 255, 0.5);
+    }
+
+    @media screen and (max-width: 640px) {
+      border-radius: 15px;
+
+      h1 {
+        font-size: 19px;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+        padding: 2px;
+      }
+
+      button {
+        font-size: 5px;
+        line-height: 6px;
+        letter-spacing: -0.01em;
+        padding: 2px 6px;
+        margin: 2px 6px;
+      }
+    }
+  }
+}
+
+.card {
+  // border: 1px solid #e9c717;
+  box-shadow: 0px 4.68399px 25px rgba(66, 61, 63, 0.15);
+}
+
+// Benefits
+
+.benefit_cover {
+  background: radial-gradient(87.25% 87.11% at 1.62% 2.86%,
+      #9265c6 10%,
+      #d585b6 67.19%,
+      #edd0ab 100%);
+  mix-blend-mode: normal;
+  height: 396px;
+  width: 1114px;
+
+}
+
+
+// slider style
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
