@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-[120px] mt-[21px] max-sm:hidden">
+      <div className="flex items-center bg-[#FFFFFF] justify-between px-[120px] mt-[21px] max-sm:hidden">
         <div className="flex items-center">
           <Image
             src={Logo}

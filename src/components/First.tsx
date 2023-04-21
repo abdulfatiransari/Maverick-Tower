@@ -14,7 +14,7 @@ export default function First({ }: Props) {
                 style={{ background: 'linear-gradient(180deg, rgba(255,255,255,1) 70%, rgba(0,48,143,1) 30%)' }}
             >
                 <div className='relative'>
-                    <h2 className='text-[50px] font-bold font-[poppins] leading-[75px] text-center uppercase'>
+                    <h2 className='text-[50px] text-[#000000] font-bold font-[poppins] leading-[75px] text-center uppercase'>
                         Skyrocket Your Hotel Bookings with Our
                         Proven Marketing SYSTEMS - <span className='relative text-[#000000] opacity-100 text-[50px] font-bold font-[poppins] leading-[75px] text-center uppercase'>Get 50+
                             <Image
