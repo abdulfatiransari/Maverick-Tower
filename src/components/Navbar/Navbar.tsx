@@ -1,13 +1,7 @@
 import Image from "next/image";
-import React, { useContext } from "react";
-import { useTheme } from "next-themes";
-import PulseIcon from "../../../public/landingpage/pulse_genisis_icon.svg";
-import WalletIcon from "../../../public/landingpage/wallet_icon.svg";
-import ModeIconDark from "../../../public/landingpage/mode_dark.svg";
-import ModeIconLight from "../../../public/landingpage/mode_light.svg";
-import MobileNavbar from "./MobileNavbar";
+import { useContext } from "react";
+import Logo from '../../../public/Icons/Mavericklogo.svg';
 import { ThemeContext } from "../Layout";
-import Logo from '../../../public/Icons/Mavericklogo.svg'
 
 const Navbar = () => {
 
@@ -19,7 +13,6 @@ const Navbar = () => {
   const [resolvedTheme, setTheme] = useContext(ThemeContext);
   return (
     <>
-      {/* <MobileNavbar /> */}
       <div className="flex items-center justify-between px-[120px] mt-[21px] max-sm:hidden">
         <div className="flex items-center">
           <Image
@@ -39,13 +32,7 @@ const Navbar = () => {
             style={{
               background: "#00308F",
             }}
-          >
-            {/* <Image
-              src={WalletIcon}
-              className="object-contain h-[20px] w-[18px] "
-              alt="InvestDex"
-            /> */}
-            Schedule a call
+          >Schedule a call
           </button>
         </div>
       </div>
