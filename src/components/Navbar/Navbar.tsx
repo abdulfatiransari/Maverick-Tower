@@ -1,16 +1,8 @@
 import Image from "next/image";
-import { useContext } from "react";
 import Logo from '../../../public/Icons/Mavericklogo.svg';
-import { ThemeContext } from "../Layout";
 
 const Navbar = () => {
 
-  const switchTheme = () => {
-    const newTheme = resolvedTheme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-
-  const [resolvedTheme, setTheme] = useContext(ThemeContext);
   return (
     <>
       <div className="flex items-center justify-between px-[120px] mt-[21px] max-sm:hidden">
