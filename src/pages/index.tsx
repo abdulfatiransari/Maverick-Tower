@@ -17,7 +17,7 @@ export default function Home(props: any) {
           <div>
             <Navbar />
           </div>
-          <div>
+          <div className="bg-[#FFFFFF]">
             <hr className="border border-1 border-[#000000] mt-[1px]" />
           </div>
           <div>
