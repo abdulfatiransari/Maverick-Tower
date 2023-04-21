@@ -13,7 +13,7 @@ export default function Home(props: any) {
       <div
         className="FlexCenter overflow-hidden
       max-sm:flex max-sm:justify-start  max-sm:max-w-[100vw] max-sm:overflow-hidden max-sm:pr-[1px] max-sm:pl-[1px] ">
-        <div className="pr-[0px] pl-[0px] max-sm:pr-0 max-sm:pl-0">
+        <div className="pr-[0px] pl-[0px] max-sm:pr-0 max-sm:pl-0 bg-[#FFFFFF]">
           <div>
             <Navbar />
           </div>
