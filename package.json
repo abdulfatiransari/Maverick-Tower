@@ -7,10 +7,10 @@
   },
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "build:digitalOcean": "npm install --production=false && rimraf dist && npm run build && npm install --production --frozen-lockfile",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
+    "build:digitalOcean": "node api.js && npm install --production=false && rimraf dist && npm run build && npm install --production --frozen-lockfile",
     "lint": "next lint",
     "export": "npm run build && next export -o _static"
   },
